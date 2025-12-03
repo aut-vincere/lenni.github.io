@@ -1,0 +1,76 @@
+<!DOCTYPE html>  
+ <html lang="ru">  
+   
+ <head> 
+      <meta charset="UTF-8" />  
+      <title>Lenni</title> 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@400,500;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body class="body">
+
+      <header class="page-header">
+        <div class="page-header__container">
+        <a class="page-header__logo" href="#">
+        <img class="page-header__logo-icon" src="logo.svg" alt="LOGO">
+        </a>
+        <nav class="page-header__nav"> 
+          <a class="page-header__nav-link" href="#">Мероприятия</a>
+          <a class="page-header__nav-link" href="#">Блог</a>
+          <a class="page-header__nav-link" href="#">О нас</a>
+          <a class="page-header__nav-link" href="#">Контакты</a>
+        </nav>
+        <div class="page-header__right-block">
+        <a class="page-header__user-link btn" href="#">Войти</a>
+        </div>
+        </div>
+        </header>
+
+          <main class="main">
+        <div class="events">
+          <section class="listing events__listing">
+            <h2 class="listing__section-title section-title">Мероприятия</h2>
+            <div class="listing__events-list">
+              <!--prettier-ignore-->
+            @@loop('blocks/event-card.html' [
+            {
+              "class": "listing__event-card",
+              "img": "../assets/images/nirvana.jpg",
+               "alt":"nirvana",
+               "title": "Собираемся и слушаем альбом Nirvana. Nirvana",
+               "descr":"Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.",
+               "time": "07.12.2024 | начало 18.00",
+               datetime: "2024-12-07T18:00",
+            },
+            ]) 
+            </div>
+          </section>
+
+          <section class="servicing events__servicing">
+            <h2 class="servicing__section-title section-title"> Дополнительные услуги</h2>
+            <P class="servicing__paragraph">
+            Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная работа, результатом которой будет проведение вашего мероприятия на высшем уровне.
+            </P>
+            <table class="servicing__table"></table>
+          </section>
+
+          <section class="offers home__offers">
+          <h4 class="offers__title">Я хочу:</h4>
+          <div class="offers__btns">
+            <button class="offers__btn btn btn--red" type="button">Провести мероприятия</button>
+            <button class="offers__btn btn " type="button">Стать арендатором</button>
+          </div>
+        </section>
+        
+        </div>
+
+     </main>
+     <footer class="page-footer">
+       FOOTER
+     </footer>
+
+   </body>
+</html>

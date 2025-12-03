@@ -25,7 +25,7 @@ color:#1f1e1e;
     height: 147px;
     background-color: #dedede80;
     backdrop-filter: blur(20px);
-     z-index: 100;
+    z-index: 100;
 }
 
 .page-header__container {
@@ -109,7 +109,7 @@ color:#1f1e1e;
 
 .home__slogan {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     box-sizing: border-box;
     align-items: center;
     width: 990px;
@@ -121,6 +121,39 @@ color:#1f1e1e;
     line-height: 58px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.home__offers {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.offers__title {
+    display: flex;
+    box-sizing: border-box;
+    color: #1f1e1e;
+    font-family: Lora;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.offers__btns {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    gap: 110px;
+    margin-top: 4px;
+    margin-bottom: 180px;
 }
 
 .btn {
@@ -147,6 +180,12 @@ color:#1f1e1e;
     color: #ffffff;
 }
 
+.btn--red:hover {
+    background-color: #bc3324;
+    color: #ffffff;
+    border: 1px solid #bc3324;
+}
+
 .section-title {  
 box-sizing: border-box;
 display: flex;
@@ -164,4 +203,9 @@ font-size: 36px;
 line-height: 1.28;
 text-align: center;
 text-transform: uppercase;
+}
+
+.page-footer {
+    flex: 0 0 auto;
+    background-color: black;
 }
