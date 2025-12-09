@@ -31,11 +31,11 @@
 
           <main class="main">
         <div class="events">
-          <section class="listing events__listing">
+         <section class="listing events__listing">
             <h2 class="listing__section-title section-title">Мероприятия</h2>
             <div class="listing__events-list">
               <!--prettier-ignore-->
-            @@loop('blocks/event-card.html' [
+            @@loop('blocks/event-card.html', [
             {
               "class": "listing__event-card",
               "img": "../assets/images/nirvana.jpg",
@@ -43,8 +43,8 @@
                "title": "Собираемся и слушаем альбом Nirvana. Nirvana",
                "descr":"Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.",
                "time": "07.12.2024 | начало 18.00",
-               datetime: "2024-12-07T18:00",
-            },
+               "datetime": "2024-12-07T18:00"
+            }
             ]) 
             </div>
           </section>
