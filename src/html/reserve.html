@@ -1,6 +1,8 @@
  <!DOCTYPE html>  
-<html lang="ru">  
+<html lang="ru" class="">  
       @@include('blocks/head.html')
+
+     
 
   <body class="body">
       @@include('blocks/page-header.html')
@@ -49,7 +51,7 @@
 
   <div class="reserve__checks">
     <h4 class="reserve__section-title">
-      Забронировать столик (ЧЕКБОКСЫ?)
+      Забронировать столик 
     </h4>
 
     <label class="reserve__check check check--red">
@@ -72,6 +74,26 @@
       <span class="check__label">2 стол</span>
     </label>
 
+    <label class="reserve__check check">
+      <input
+        type="checkbox"
+        name="table_3"
+        class="check__input"
+      />
+      <span class="check__mark"></span>
+      <span class="check__label">3 стол</span>
+    </label>
+
+    <label class="reserve__check check check--red">
+      <input
+        type="checkbox"
+        name="table_4"
+        class="check__input"
+      />
+      <span class="check__mark"></span>
+      <span class="check__label">4 стол</span>
+    </label>
+
     <label class="reserve__check check check--disabled">
       <input
         type="checkbox"
@@ -82,17 +104,80 @@
       <span class="check__mark"></span>
       <span class="check__label">5 стол </span>
     </label>
+
+    <label class="reserve__check check">
+      <input
+        type="checkbox"
+        name="table_6"
+        class="check__input"
+      />
+      <span class="check__mark"></span>
+      <span class="check__label">6 стол</span>
+    </label>
+
+    <label class="reserve__check check check--red">
+      <input
+        type="checkbox"
+        name="table_7"
+        class="check__input"
+      />
+      <span class="check__mark"></span>
+      <span class="check__label">7 стол</span>
+    </label>
+
+    <label class="reserve__check check check--red">
+      <input
+        type="checkbox"
+        name="table_8"
+        class="check__input"
+      />
+      <span class="check__mark"></span>
+      <span class="check__label">8 стол</span>
+    </label>
+
+    <label class="reserve__check check check--red">
+      <input
+        type="checkbox"
+        name="table_9"
+        class="check__input"
+      />
+      <span class="check__mark"></span>
+      <span class="check__label">9 стол</span>
+    </label>
+
+    <label class="reserve__check check">
+      <input
+        type="checkbox"
+        name="table_10"
+        class="check__input"
+      />
+      <span class="check__mark"></span>
+      <span class="check__label">10 стол</span>
+    </label>
+
+    <label class="reserve__check check">
+      <input
+        type="checkbox"
+        name="table_11"
+        class="check__input"
+      />
+      <span class="check__mark"></span>
+      <span class="check__label">11 стол</span>
+    </label>
+
+
+
+
+
     
    
   </div>
              
-</form>
 
-<form class="reserve">
               
-  <div class="reserve__scheme"> СХЕМА СТОЛОВ
+  <div class="reserve__scheme"> 
     <div class="reserve__scheme-container">
-      <h4 class="reserve__scheme-title"></h4>
+      <h4 class="reserve__scheme-title">Сцена</h4>
                   
       <div class="reserve__scheme-wrapper">
         <svg
@@ -330,17 +415,15 @@
   </div>
              
   <!-- Прочие элементы формы -->
-</form>
 
-<form class="reserve">
   <!-- Прочие элементы формы -->
               
-  <div class="reserve__order"> ОФОРМЛЕНИЕ ЗАКАЗА
+  <div class="reserve__order"> 
     <h4 class="reserve__section-title">Ваши пригласительные билеты</h4>
 
     <div class="reserve__tickets-list">
       <div class="reserve__tickets">
-        <div class="reserve__qty" data-caption="шт." data-price="1400">0</div>
+        <div class="reserve__qty" data-caption="шт." data-price="1400"> 0 </div>
         <div class="reserve__sum" data-currency="₽">0</div>
       </div>
 
@@ -357,10 +440,12 @@
   </div>
              
   <!-- Прочие элементы формы -->
+
+  <div class="reserve__legend">Легенда
+    <h4 class="reserve__section-title">Стоимость пригласительного билета</h4>
+
+  </div>
 </form>
-
-  <div class="reserve__legend">Легенда</div>
-
 
       </main>
       <footer></footer>

@@ -11,7 +11,8 @@
     cursor: pointer;
     &__input {
         .is-hidden();
-        &:checked {
+        &:checked,
+        &__check {
             & ~ .check__mark {
                 background-color: @black;
                 &::after {
@@ -25,12 +26,33 @@
                     border-bottom: 2px solid @white;
                     border-right: 2px solid @white;
                     transform: rotate(45deg);
-                    
-
+                    }
                 }
             }
         }
+
+           
+  &--red {
+    color: @red;
+    .check__mark {
+      border-color: @red;
     }
+
+    .check__input {
+      &:checked {
+        & ~ .check__mark {
+          background-color: @red;
+        }
+      }
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+        
+    
     &__mark {
         box-sizing: border-box;
         display: block;
@@ -41,6 +63,19 @@
         height: 24px;
         border: 1px solid @black;
         transition: background-color 0.2s;
+        &--red {
+             box-sizing: border-box;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            border: 1px solid @red;
+            transition: background-color 0.2s;
+
+        }
+        
     }
     &__label {
         font-weight: 400;
@@ -52,5 +87,7 @@
 
         }
     }
+   
+    }
 
-}
+
