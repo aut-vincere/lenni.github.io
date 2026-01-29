@@ -1,0 +1,133 @@
+.legend {
+    box-sizing: border-box;
+    position: relative;
+    margin-left: auto;
+
+    //justify-content: flex-start;
+    //display: inline-flex;
+    //flex-direction: column;
+    //align-items: flex-end;
+    //justify-content: space-around;
+    min-height: 24px;
+    padding-left: 170px;
+    padding-top: 2px;
+    color: @black;
+    cursor: pointer;
+    &__input {
+        .is-hidden();
+     &:checked,
+        &__legend {
+            & ~ .legend__mark {
+                background-color: @black;
+
+        }
+    
+        }
+    }
+
+           
+  &--red {
+    color: @red;
+    .legend__mark {
+      border-color: @red;
+    }
+
+    .legend__input {
+      &:checked {
+        & ~ .legend__mark {
+          background-color: @red_dark;
+        }
+      }
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+        
+    
+    &__mark {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        border: 1px solid @black;
+        transition: background-color 0.2s;
+        &--red {
+             box-sizing: border-box;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            border: 1px solid @red_dark;
+            transition: background-color 0.2s;
+
+        }
+        
+    }
+    &__label {
+        display: inline-flex;
+        //margin-left: auto;
+        //margin-right: 293px;
+        gap: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.375;
+        color: @black;
+        white-space: nowrap;
+        &--fz14 {
+        font-size: 14px;
+        font-family: @font1;
+
+        }
+    }
+
+    &__note {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      //margin-top: 30px;
+      //gap: 15px;
+
+    }
+
+    &__note-row {
+      display: flex;
+      align-items: flex-end;
+      //gap: 50px;
+      margin-bottom: 18px;
+    }
+
+    &__note-text {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &__figure {
+      width: 25px;
+      height: 25px;
+	background: @gray_dark;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50%;
+  margin-right: 12px;
+  //top: 50%;
+  //right: 20px;
+  //left: 30px;
+  //transform: translate(40px, 40px);
+  &--border-black {
+
+  }
+  &--border-red {
+
+  }
+    }
+   
+    }
