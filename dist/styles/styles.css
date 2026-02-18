@@ -1611,10 +1611,35 @@ textarea {
   letter-spacing: 0.02em;
   z-index: 1;
 }
-.article {
-  padding: 40px 0 150px;
+.article .article__centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
-.article__container {
+.article .article__centered .article__main-title {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 90px;
+  margin: 0 0 40px;
+}
+.article .article__centered .article__picture {
+  margin-bottom: 40px;
+}
+.article .article__centered .article__picture img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.article .article__container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1634,11 +1659,11 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-.article__content {
-  max-width: 830px;
-}
-.article {
-  padding: 40px 0 150px;
+.article .article__content {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
+  text-align: left;
 }
 .reserve {
   -webkit-box-sizing: border-box;
@@ -1894,7 +1919,7 @@ textarea {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .article__container {
+  .article .article__container {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -1917,6 +1942,12 @@ textarea {
   }
 }
 @media (max-width: 1019px) {
+  .event-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .table__th {
     font-size: 14px;
   }
@@ -2182,7 +2213,10 @@ textarea {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .article__container {
+  .article .article__centered .article__picture {
+    max-width: 245px;
+  }
+  .article .article__container {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -2196,6 +2230,13 @@ textarea {
   }
 }
 @media (max-width: 649px) {
+  .event-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
   .listing__event-card {
     width: 100%;
   }
