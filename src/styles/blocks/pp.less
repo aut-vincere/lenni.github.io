@@ -10,8 +10,10 @@
     background:  #1c1b1b66;
     overflow-y: auto;
     z-index: 110;
-    ///display: none;
-    display: block;
+    display: none;
+    ///display: block;
+    opacity: 0;
+    visibility: hidden;
     &__wrapper {
         box-sizing: border-box;
         position: relative;
@@ -62,4 +64,10 @@
         z-index: 1;
 
     }
+}
+
+.show-reserve-popup .pp {
+    opacity: 1;
+    visibility: visible;
+    display: block;
 }
