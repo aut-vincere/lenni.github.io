@@ -48,12 +48,14 @@ const { space } = require("postcss/lib/list");
         });  
     }
 
-    let swipers = document.querySelectorAll(".js-swiper");
+    //swiper slide for events//
+
+    const swipers = document.querySelectorAll(".js-swiper");
 
     swipers.forEach(function(swpr) {
         new Swiper(swpr, {
             updateOnWindowResize: true,
-            slidesOPerView: "auto",
+            slidesPerView: "auto",
             freeMode: true, 
             spaceBetween: 0,
             speed: 500,
