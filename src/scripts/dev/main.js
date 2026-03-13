@@ -1,5 +1,3 @@
-const { space } = require("postcss/lib/list");
-
 (function() {
 
     "use strict";
@@ -9,9 +7,9 @@ const { space } = require("postcss/lib/list");
     navToggle.addEventListener("click", function() {
         root.classList.toggle("show-nav");
     });
-//burger-menu//
+//burger-menu/
 
-//pp//
+//pp/
 
     const reservePP = document.querySelector("#js-reservePP");
 
@@ -48,7 +46,7 @@ const { space } = require("postcss/lib/list");
         });  
     }
 
-    //swiper slide for events//
+    //swiper slide for events/
 
     const swipers = document.querySelectorAll(".js-swiper");
 
@@ -62,13 +60,17 @@ const { space } = require("postcss/lib/list");
             grabCursor: true,
             pagination: {
                 el: swpr.querySelector(".swiper-pagination"),
-                clickable: true
+                clickable: true,
             },
             navigation: {
                 nextEl: swpr.querySelector(".swiper-arrow-next"),
                 prevEl:swpr.querySelector(".swiper-arrow-prev"),
-                disabledClass: "arrow--disabled"
-            }
+                disabledClass: "arrow--disabled",
+            },
         });
     });
+
 })();
+
+
+ 
