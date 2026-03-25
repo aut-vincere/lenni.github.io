@@ -30,10 +30,9 @@
          @@include('blocks/blog-listing.html', {"class":"home__listing"})
         </section>
 
-        <section class="contacts home__contacts">
-          <h2 class="contacts__section-title section-title">Контакты</h2>
-          <div class="contacts__container"></div>
-        </section>
+         @@include('blocks/contacts.html', {"class":"home__contacts"})
+
+       
 
         <div class="doit">
 
@@ -44,6 +43,10 @@
 
       @@include('blocks/page-footer.html')
       @@include('blocks/reserve-pp.html')
+
+      <script
+    src="https://maps.googleapis.com/maps/api/js?key="
+></script>
 
       <script src="scripts/swiper.min.js"></script>
 

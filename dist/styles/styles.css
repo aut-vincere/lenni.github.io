@@ -2793,6 +2793,10 @@ button.swiper-pagination-bullet {
   margin-top: 40px;
   text-align: left;
 }
+.contacts #js-contactsMap {
+  width: 100%;
+  height: 400px;
+}
 .reserve {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
