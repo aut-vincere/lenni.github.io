@@ -1,35 +1,73 @@
 .about {
-    &__container {
+    &__container1 {
   .container();
     display: flex;
     justify-content: space-between;
     align-items: center;
     }
+
+&__block1 {
+display: flex;
+}
+
+&__title1 {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    color:#1f1e1e;
+    font-family: @font1;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+&__text1 {
+  display: inline-block;
+  width: 100%;
+  max-width: 867px;
+  // height: 74px;
+  margin-top: 110px;
+  margin-bottom: 100px;
+  color:#1f1e1e;
+  font-family: @font1;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
  
+// GRID LAYOUT!!!
+
+
+
 &__block2 {
+    .container();
   display: grid;
   grid-template-columns: 1fr 406px;
-  gap: 90px 65px;
+  height: 100%;
+  // gap: 90px 58px;
   grid-template-areas: 
   "pic pic2"
-  "title pic2"
-  "text text";
+  "title2 pic2"
+  "text text"
+  // "figure pic3 text2";
 }
 
 &__picture {
   grid-area: pic;
+  margin-right: 60px;
+  margin-bottom: 100px;
+// max-width: 870px;
 }
 
-
-&__title {
-  grid-area: title;
+&__title2 {
+  grid-area: title2;
   margin: 10px 0 0;
   font-size: 44px;
   font-weight: 700;
   color: @black;
   font-family: @font1;
   line-height: 60px;
-  min-width: 860px;
+  max-width: 860px;
   width: 100%;
 
 }
@@ -41,8 +79,8 @@
 
 &__text {
   grid-area: text;
-  margin: 0 80px 0 auto;
-  max-width: 870px;
+  margin: 87px 80px 74px auto;
+  max-width: 867px;
   width: 100%;
   color: @black;
   font-family: @font1;
@@ -50,4 +88,40 @@
   font-weight: 400;
   line-height: 25px;
 }
+
+&__figure {
+  background-color: @red;
+  width: 928px;
+  height: 246px;
+  float: left;
+  position: relative;
+}
+
+&__picture3 {
+  grid-area: pic3;
+  position: absolute;
+  // justify-self: flex-start;
+  align-self: flex-end;
+  // margin-top: 20px;
+  margin-left: 50px;
+  // margin-top: 90px;
+  padding-top: 90px;
+ 
+}
+
+// &__text2 {
+//   grid-area: text2;
+//   margin-left: 60px;
+//   // margin: 87px 80px 74px auto;
+//   max-width: 867px;
+//   width: 100%;
+//   color: @black;
+//   font-family: @font1;
+//   font-size: 18px;
+//   font-weight: 400;
+//   line-height: 25px;
+//   align-self: flex-end;
+
+// }
+
 }
