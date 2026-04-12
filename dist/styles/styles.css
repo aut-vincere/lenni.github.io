@@ -1847,6 +1847,7 @@ button.swiper-pagination-bullet {
   line-height: 100px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 .offers__btns {
   display: -webkit-box;
@@ -1859,8 +1860,8 @@ button.swiper-pagination-bullet {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 110px;
-  margin-top: 4px;
-  margin-bottom: 180px;
+  margin-top: 20px;
+  margin-bottom: 200px;
 }
 .legend {
   -webkit-box-sizing: border-box;
@@ -2083,19 +2084,101 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   line-height: 25px;
 }
+.about__block3 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 .about__figure {
   background-color: #bc3324;
-  width: 928px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 928px;
   height: 246px;
+  width: 100%;
   float: left;
   position: relative;
 }
 .about__picture3 {
-  grid-area: pic3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  align-self: flex-end;
-  margin-left: 50px;
-  padding-top: 90px;
+  margin-left: 48px;
+  margin-top: 20px;
+  margin-bottom: 210px;
+}
+.about__text2 {
+  max-width: 867px;
+  width: 100%;
+  color: #1f1e1e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0;
+}
+.about__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 60px;
+  margin-top: 155px;
+}
+.about__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 90px;
+  margin-bottom: 110px;
+}
+.about__navigation:hover .about__link {
+  color: #bc3324;
+}
+.about__link {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: 600;
+  line-height: 22px;
+}
+.about__link:hover {
+  color: #bc3324;
+}
+.about__arrow {
+  margin-left: 130px;
+  margin-top: -20px;
 }
 .upcoming {
   position: relative;
@@ -2165,6 +2248,21 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.upcoming__link {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: auto;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  text-align: right;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: 600;
+  line-height: 22px;
+}
+.upcoming__link:hover {
+  color: #bc3324;
 }
 .page-header {
   position: fixed;
@@ -2373,7 +2471,16 @@ button.swiper-pagination-bullet {
   margin-top: 70px;
   margin-bottom: 70px;
   margin-left: auto;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
   text-align: right;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: 600;
+  line-height: 22px;
+}
+.listing__link:hover {
+  color: #bc3324;
 }
 .servicing__blog {
   max-width: 1334px;
@@ -2931,6 +3038,24 @@ button.swiper-pagination-bullet {
   float: left;
   margin-left: 293px;
 }
+.doit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 150px;
+  margin-bottom: 140px;
+}
+.doit__title {
+  margin: 0 auto;
+  text-align: right;
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 130px;
+  line-height: 120%;
+}
 .reserve {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3190,6 +3315,10 @@ button.swiper-pagination-bullet {
     padding-right: 30px;
   }
   .about__block2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about__block3 {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -3484,6 +3613,10 @@ button.swiper-pagination-bullet {
     padding-right: 20px;
   }
   .about__block2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about__block3 {
     padding-left: 20px;
     padding-right: 20px;
   }
