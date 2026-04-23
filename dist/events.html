@@ -324,44 +324,53 @@
 
   </main>
   <footer class="page-footer">
-    <div class="footer-container">
+    <div class="footer__container">
+
 
       <div class="footer__main-info">
-        <figure class="footer__vertical-line"></figure>
-        <li class="footer__info">
-          <a href="#">Календарь мероприятий</a>
-        </li>
-        <li class="footer__info">
-          <a href="#">Провести мероприятие</a>
-        </li>
-        <li class="footer__info">
-          <a href="#">Стать арендатором</a>
-        </li>
-        <li class="footer__info">
-          <a href="#">Наши проекты</a>
-        </li>
-        <li class="footer__info">
-          <a href="#">Контакты</a>
-        </li>
+
+        <div class="footer__vertical-line"></div>
+
+        <ul class="footer__info-link">
+
+          <li class="footer__info">
+            <a class="footer__link-click" href="#">Календарь мероприятий</a>
+          </li>
+          <li class="footer__info">
+            <a class="footer__link-click" href="#">Провести мероприятие</a>
+          </li>
+          <li class="footer__info">
+            <a class="footer__link-click" href="#">Стать арендатором</a>
+          </li>
+          <li class="footer__info">
+            <a class="footer__link-click" href="#">Наши проекты</a>
+          </li>
+          <li class="footer__info">
+            <a class="footer__link-click" href="#">Контакты</a>
+          </li>
+
+        </ul>
+
       </div>
 
-      <div class="footer__official-info">
+      <h4 class="footer__millenials">
+        <a class="footer__millenials-link" href="#">© Millennials 2025</a>
+      </h4>
+
+      <ul class="footer__official">
         <li class="footer__of-info">
-          <a href="#"> © Millennials 2025 </a>
+          <a class="footer__ofinfo-link" href="#"> Политика конфиденциальности</a>
         </li>
         <li class="footer__of-info">
-          <a href="#"> Политика конфиденциальности</a>
+          <a class="footer__ofinfo-link" href="#"> Cookies</a>
         </li>
-        <li class="footer__of-info">
-          <a href="#"> Cookies</a>
-        </li>
-      </div>
+      </ul>
 
       <div class="footer__social-media">
 
         <div class="footer__media">
-          <a href="#" class="footer__link">
-            <figure class="footer__black-circle"></figure>
+          <a href="#" class="footer__media-link">
+            <div class="footer__black-circle1"></div>
             <span class="footer__icon-media icon">
               <svg class="footer__icon" width="24" height="24">
                 <use xlink:href="../assets/icons/symbols.svg#vk"></use>
@@ -369,8 +378,8 @@
             </span>
           </a>
 
-          <a href="#" class="footer__link">
-            <figure class="footer__black-circle"></figure>
+          <a href="#" class="footer__media-link">
+            <div class="footer__black-circle2"></div>
             <span class="footer__icon-media icon">
               <svg class="footer__icon" width="24" height="24">
                 <use xlink:href="../assets/icons/symbols.svg#vk"></use>
@@ -439,7 +448,7 @@
                 <span class="field__title">
                   Планируемое количество посетителей:
                 </span>
-                <select class="field__select" name="amount">
+                <select class="field__select js-selectric" name="amount">
                   <option value="20">до 20 человек</option>
                   <option value="100">от 20 до 100 человек</option>
                   <option value="500">от 100 до 500 человек</option>
@@ -513,6 +522,8 @@
       </div>
     </div>
   </div>
+
+  <script src="scripts/jquery-3.7.1.min.js"></script>
 
   <script src="scripts/main.min.js"></script>
 </body>
