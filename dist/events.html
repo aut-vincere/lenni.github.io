@@ -370,24 +370,26 @@
 
         <div class="footer__media">
           <a href="#" class="footer__media-link">
-            <div class="footer__black-circle1"></div>
+            <div class="footer__black-circle"></div>
             <span class="footer__icon-media icon">
-              <svg class="footer__icon" width="24" height="24">
+              <svg class="footer__icon-1" width="24" height="24">
                 <use xlink:href="../assets/icons/symbols.svg#vk"></use>
               </svg>
             </span>
           </a>
 
           <a href="#" class="footer__media-link">
-            <div class="footer__black-circle2"></div>
+            <div class="footer__black-circle"></div>
             <span class="footer__icon-media icon">
-              <svg class="footer__icon" width="24" height="24">
+              <svg class="footer__icon-2" width="24" height="24">
                 <use xlink:href="../assets/icons/symbols.svg#vk"></use>
               </svg>
             </span>
           </a>
 
         </div>
+
+
 
 
 
@@ -489,7 +491,7 @@
 
             <label class="field form__field form__field--w50">
               <span class="field__label">Телефон*</span>
-              <input class="field__input" type="text" name="phone" placeholder="Телефон" required />
+              <input class="field__input js-mobileMask" type="text" name="phone" placeholder="Телефон" required />
             </label>
 
             <label class="field form__field form__field--w50">
@@ -524,6 +526,11 @@
   </div>
 
   <script src="scripts/jquery-3.7.1.min.js"></script>
+
+  <script src="scripts/jquery.selectric.js"></script>
+
+  <script src="scripts/jquery.mask.js"></script>
+
 
   <script src="scripts/main.min.js"></script>
 </body>
