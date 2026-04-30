@@ -496,16 +496,44 @@
 
          </div>
 
+       </div>
+
+       <div class="footer__subscribe-container">
+         <form class="footer__subscribe-form subscribe-form">
+           <h4 class="subscribe-form__title">
+             Подпишись и будь в курсе происходящего
+           </h4>
+
+           <div class="subscribe-form__wrapper">
+             <div class="subscribe-form__field-wrapper">
+               <input type="email" name="email" placeholder="Email" class="subscribe-form__input" required />
+             </div>
+
+             <button type="submit" class="subscribe-form__submit">
+               Подписаться
+             </button>
+           </div>
+
+           <label class="subscribe-form__check check">
+             <input type="checkbox" name="agree" class="check__input" required checked />
+
+             <span class="check__mark"></span>
+             <span class="check__label check__label--s">
+               Согласен на обработку персональных данных
+             </span>
 
 
-
-
+           </label>
+         </form>
        </div>
 
      </div>
    </footer>
 
    <script src="scripts/jquery-3.7.1.min.js"></script>
+   <script src="scripts/jquery.validate.js"></script>
+   <script src="scripts/jquery.validate-init.js"></script>
+
    <script src="scripts/main.min.js"></script>
  </body>
 

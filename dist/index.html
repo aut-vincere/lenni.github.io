@@ -546,10 +546,35 @@
 
         </div>
 
+      </div>
+
+      <div class="footer__subscribe-container">
+        <form class="footer__subscribe-form subscribe-form">
+          <h4 class="subscribe-form__title">
+            Подпишись и будь в курсе происходящего
+          </h4>
+
+          <div class="subscribe-form__wrapper">
+            <div class="subscribe-form__field-wrapper">
+              <input type="email" name="email" placeholder="Email" class="subscribe-form__input" required />
+            </div>
+
+            <button type="submit" class="subscribe-form__submit">
+              Подписаться
+            </button>
+          </div>
+
+          <label class="subscribe-form__check check">
+            <input type="checkbox" name="agree" class="check__input" required checked />
+
+            <span class="check__mark"></span>
+            <span class="check__label check__label--s">
+              Согласен на обработку персональных данных
+            </span>
 
 
-
-
+          </label>
+        </form>
       </div>
 
     </div>
@@ -567,7 +592,7 @@
         <h2 class="pp__title">Заполните форму </br>
           и мы подберем площадку
         </h2>
-        <form class="pp__form form">
+        <form class="pp__form form" id="js-eventForm">
 
           <div class="form__list">
             <div class="field form__field form__field--w50">
@@ -615,17 +640,22 @@
                 </select>
               </label>
 
-              <div class="field form__field form__field--m0">
+              <div class="field form__field form__field--m0 js-dateField">
                 <h5 class="field__title">
                   Дата проведения:
                 </h5>
                 <div class="field__date">
                   <div class="field__date-inputs">
-                    <input class="field__date-input" type="text" placeholder="ДД" />
-                    <input class="field__date-input" type="text" placeholder="ММ" />
-                    <input class="field__date-input field__date-input--year" type="text" placeholder="ГГГГ" />
+                    <input class="field__date-input js-dateDay" type="text" placeholder="ДД" readonly />
+
+                    <input class="field__date-input js-dateMonth" type="text" placeholder="ММ" readonly />
+
+                    <input class="field__date-input field__date-input--year js-dateYear" type="text" placeholder="ГГГГ" readonly />
 
                   </div>
+
+                  <input class="field__date-picker js-dateInput" type="text" name="date" readonly required />
+
                 </div>
               </div>
             </div>
@@ -677,6 +707,7 @@
               Закрыть
             </button>
           </div>
+
         </form>
       </div>
     </div>
@@ -685,14 +716,20 @@
   <script src="scripts/jquery-3.7.1.min.js"></script>
 
   <script src="scripts/jquery.selectric.js"></script>
-
   <script src="scripts/jquery.mask.js"></script>
+  <script src="scripts/air-datepicker.js"></script>
+
 
   <script src="https://maps.googleapis.com/maps/api/js?key="></script>
 
-  <script src="scripts/swiper.min.js"></script>
+  <script src="scripts/jquery.validate.js"></script>
+  <script src="scripts/jquery.validate-init.js"></script>
 
+  <script src="scripts/swiper.min.js"></script>
   <script src="scripts/main.min.js"></script>
+
+
+
 </body>
 
 </html>
